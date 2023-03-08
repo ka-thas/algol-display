@@ -11,9 +11,12 @@ Raspberry Pi bruker [LXDE](https://wiki.archlinux.org/title/LXDE) som desktop en
 Ruter har lagd en applikasjon som enkelt lager avgangstavler. Gå inn på [Ruter Mon](https://mon.ruter.no/) og sett opp en tavle. Alle instillinger blir en del av url-en.
 
 Med disse to har man det man trenger for å lage åpne en avgangstavle on boot; bare putt det her i ```autostart```:
+
 ```
 @chromium-browser --start-maximized --start-fullscreen <URL>
 ```
+
+Dette kan man gjøre ved å kjøre ```./sync.sh```, som vil kopiere ```autostart```-filen i dette repoet til riktig plassering.
 
 ### xdotool
 
